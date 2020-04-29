@@ -1,16 +1,16 @@
-function Person(name){
+import {buildPersonData, DEMO} from "./buildPersonData";
 
-    this.name = name;
+const partialAddress = ["Street Name",
+    "Street Number", "Po Box"];
 
-    this.sayHi = function(){
+const firstName = 'Kobe',
+    lastName = 'Bryankt';
 
-        setTimeout( ()=>{
-            console.log('Hello ' + this.name)
+const personData = {
+    firstName,
+    lastName
+};
 
-        },10000)
-    }
-}
+const address = [...partialAddress, 'Staples Center'];
 
-const person = new Person('Bob');
-
-person.sayHi();
+console.log(buildPersonData(personData, address));
