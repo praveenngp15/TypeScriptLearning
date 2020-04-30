@@ -1,11 +1,8 @@
-function userName(name?:string) :string | undefined{
-    if(name){
-        return name;
-    }
-
-    return undefined
-
-}
+let nameofPerson:any = 'Praveen';
+nameofPerson ={};
 
 
-console.log(userName('Praveen'))
+let str:string = 'Kevin';
+str = nameofPerson;
+
+//We can assign any data type to string
