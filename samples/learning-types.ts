@@ -1,14 +1,15 @@
+enum PlayerPosition{
+    Guard,
+    Forward,
+    Center
+}
 
-type ThreeNames = [string, string, string];
+type Player=[string,PlayerPosition]
 
-let persons: ThreeNames = ['Kobe','Kareem', 'Shaq'];
+let kobe:Player=["Kobe",PlayerPosition.Guard]
+let kevin:Player=["Kevin",PlayerPosition.Center]
+let john:Player = ["John",PlayerPosition.Forward]
 
-//DeclaringArrayExample
-let counters: number[] = [0, 1,2];
+let players: Player[] =[kobe,kevin,john]
 
-
-type PlayerTuple = [string, number];
-
-let tuple: PlayerTuple = ['Kobe', 5];
-
-
+console.log(players)
