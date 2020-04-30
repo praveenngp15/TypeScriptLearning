@@ -1,18 +1,11 @@
-enum PlayerPosition{
-    Guard,
-    Forward,
-    Center
-}
+function userName(name?:string) :string | undefined{
+    if(name){
+        return name;
+    }
 
-interface Player{
-    name:string,
-    playerPos:PlayerPosition;
-}
+    return undefined
 
-let kevin: Player | null ={
-    name : "Kevin",
-    playerPos : PlayerPosition.Guard
 }
 
 
-kevin = null;
+console.log(userName('Praveen'))
