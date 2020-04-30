@@ -1,8 +1,15 @@
-let nameofPerson:any = 'Praveen';
-nameofPerson ={};
 
+interface HasName  {
+    firstName:string,
+    lastName: string
+}
 
-let str:string = 'Kevin';
-str = nameofPerson;
+interface HasAddress  {
+    address:string
+}
 
-//We can assign any data type to string
+type Player = (HasName & HasAddress) | null;
+
+const player = {firstName: "Magic", lastName:"Johnson", address:"Staples"};
+
+console.log(player);
