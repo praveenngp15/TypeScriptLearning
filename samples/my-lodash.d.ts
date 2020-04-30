@@ -1,7 +1,12 @@
-declare interface FirstFunction {
-    (data: any[]): any
-}
+declare module "lodash"{
 
-declare interface Lodash {
-    first: FirstFunction
+     interface FirstFunction {
+        (data: any[]): any
+    }
+
+     interface Lodash {
+        first: FirstFunction
+    }
+
+    export const _: Lodash;
 }
