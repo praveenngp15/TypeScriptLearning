@@ -1,22 +1,14 @@
 
+type ThreeNames = [string, string, string];
 
-interface MessageCreator {
-    (name:string) : string
-};
+let persons: ThreeNames = ['Kobe','Kareem', 'Shaq'];
 
-
-//With typeDefinition
-//type MessageCreator=(name:string) => string
-// name:string is parameter
-//=> string is return type
+//DeclaringArrayExample
+let counters: number[] = [0, 1,2];
 
 
-function createHelloMessage(name:string) :string {
-    return `Hello, my name is ${name}`;
-}
+type PlayerTuple = [string, number];
 
-const creator: MessageCreator = createHelloMessage;
+let tuple: PlayerTuple = ['Kobe', 5];
 
-const message = creator('Bill');
 
-console.log(message);
