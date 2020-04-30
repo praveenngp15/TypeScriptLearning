@@ -1,4 +1,4 @@
-import {buildPersonData, DEMO} from "./buildPersonData";
+import {buildPersonData} from "./buildPersonData";
 
 const partialAddress = ["Street Name",
     "Street Number", "Po Box"];
